@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quotes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button id="btnGetNewQuote">Get random quote</button>
+        <form action="JavaScript:addQuote()">
+            <input type="submit" value="Add quote">
+        </form>
+        <form action="JavaScript:editQuote()">
+            <input type="submit" value="Edit quote">
+        </form>
+        <form action="JavaScript:deleteQuote()">
+            <input type="submit" value="Delete quote">
+        </form>
+        <textarea id="textfieldQuote" rows="4" cols="50"></textarea>
+        <div id="output"></div>
+        <form action="JavaScript:getSpecificQuote()">
+            <input type="text" id="inputQuoteNumber" placeholder="Please enter a number">
+            <input type="submit" value="Get quote by id">
+        </form>
+        <script src="quotes.js"></script>
+    </body>
+</html>
